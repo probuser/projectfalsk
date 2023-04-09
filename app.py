@@ -28,7 +28,7 @@ def home_page():
 @app.route('/jobs/<id>')
 def travel_page(id):
     cursor.execute("select * from database_work.travel_location where id = id;")
-    return dict(cursor)
+    return dict( cursor)
 
 if __name__ == '__main__':
     app.run(debug=True)
