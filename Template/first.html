@@ -2,103 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>flask_task_page</title>
-    <style>
-        h1{
-        color : rgb(100, 99, 101);
-        text-align : center;
-        font-family:Roboto;
-        font-weight : normal
+    <title>travellers_den</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<style>
+      h1 {text-align: center;}
+      p {text-align: center;}
+      button{ margin: 40px;}
 
-        }
-        div {
-        text-align : center;
-
-        }
-        body {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(101,0,94,1) 3%, rgba(60,132,206,1) 38%, rgba(48,238,226,1) 68%, rgba(255,25,25,1) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
-}
-
-.wave {
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
-}
-
-.wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
-}
-
-@keyframes wave {
-    2% {
-        transform: translateX(1);
-    }
-
-    25% {
-        transform: translateX(-25%);
-    }
-
-    50% {
-        transform: translateX(-50%);
-    }
-
-    75% {
-        transform: translateX(-25%);
-    }
-
-    100% {
-        transform: translateX(1);
-    }
-}
-
-    </style>
-
+   </style>
 </head>
-<body>
-<h1 >Flask Task</h1>
+<body class="container-sm">
+<div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<h1 class="font-monospace" style="text-c">Flask Task</h1>
 <br>
 <div>
-    <img src="flask.jpg"/>
+    <img  class="rounded mx-auto d-block" src="static/van-7851107_960_720.jpg"/>
     <br>
-<p> Flask is a lightweight web framework for Python that allows developers to build web applications quickly and easily. It is classified as a micro-framework because it does not require particular tools or libraries, but instead provides the core functionality needed to develop web applications. Flask is ideal for building small to medium-sized web applications with simple requirements, such as a RESTful API or a web page that interacts with a database.</p>
-<div class="wave"></div>
-     <div class="wave"></div>
-     <div class="wave"></div>
 </div>
+
+    <figure class="text-center">
+  <blockquote class="blockquote">
+    <p>The world is a book, and those who do not travel read only one page.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    By <cite title="Source Title">Saint Augustine</cite>
+  </figcaption>
+</figure>
+        <div class="mx-auto p-2" style="width: 75%;">
+            <p>Travelling is an experience like no other. It allows you to step out of your comfort zone and explore new places, cultures, and people. Whether it's a short trip to a nearby city or a long journey to a far-off land, travel can enrich your life in countless ways.</p>
+
+            <p>One of the most exciting aspects of travelling is the opportunity to try new things. You can sample local cuisine, try new activities, and immerse yourself in different customs and traditions. This can broaden your horizons and give you a fresh perspective on life.</p>
+            <br>
+
+            <p>Travelling can also help you to develop important life skills such as adaptability, problem-solving, and communication. When you're in a foreign environment, you need to be flexible and able to deal with unexpected situations. This can help you to become more resilient and confident in your everyday life.</p>
+            <br>
+
+            <p>Another benefit of travelling is the chance to create unforgettable memories. Whether it's exploring ancient ruins, hiking through a national park, or simply enjoying a beautiful sunset, these experiences can stay with you for a lifetime. They can also provide a source of inspiration and motivation for years to come.</p>
+            <br>
+
+            <p>Of course, travelling isn't always easy. It can be challenging to navigate new cultures and languages, deal with unexpected setbacks, and adjust to different climates and time zones. However, these challenges can also be opportunities for growth and learning. By facing them head-on, you can build your confidence and resilience, and become a more well-rounded person.</p>
+            <br>
+
+            <p>Overall, travelling is an incredible way to explore the world, learn new things, and create lifelong memories. Whether you're planning a solo adventure, a romantic getaway, or a family vacation, there's no better time to start than now. So pack your bags, book your tickets, and get ready to embark on the journey of a lifetime!</p>
+            <br>
+
+    </div>
+    <h1 class="font-monospace"> Want to join Us</h1>
+<!--    <div >-->
+<!--        {% for i in travel_buddy: %}-->
+<!--        <h3 style="text-align: left; font-weight: lighter; font-style: normal;">Location :{{i["location"]}}</h3>-->
+<!--        <h5  style="text-align: left; font-weight: lighter; font-style: normal;">budget :{{i["budget"]}}</h5>-->
+<!--        <h5  style="text-align: left; font-weight: lighter; font-style: normal;">start date :{{i["start_date"]}}</h5>-->
+
+<!--        <button type="button" class="btn btn-secondary">Secondary</button>-->
+<!--         <br>-->
+<!--        <br>-->
+<!--        {%endfor%}-->
+
+<!--    </div>-->
+
+    <div class="container">
+    <div class="row">
+        {% for i in travel_buddy: %}
+        <div class="col-10 bg-light text-right">
+        <h3 style="text-align: left; font-weight: lighter; font-style: normal;">Location :{{i["location"]}}</h3>
+        <h5  style="text-align: left; font-weight: lighter; font-style: normal;">budget :{{i["budget"]}}</h5>
+        <h5  style="text-align: left; font-weight: lighter; font-style: normal;">start date :{{i["start_date"]}}</h5>
+            <br>
+            <hr class="style1">
+        </div>
+        <div class="col bg-light text-right">
+            <button type="button" class="btn btn-warning " style="text-align: center; ">Apply</button>
+
+        </div>
+        {%endfor%}
+    </div>
+
+</div>
+</div>
+
+
+
 
 </body>
 </html>
