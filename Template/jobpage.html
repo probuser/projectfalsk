@@ -18,7 +18,7 @@
 <div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
-<h1 class="font-monospace" style="text-c">Flask Task</h1>
+<h1 class="font-monospace" style="text-c">Travel</h1>
 <br>
 <div>
     <img  class="rounded mx-auto d-block" src="static/van-7851107_960_720.jpg"/>
@@ -33,6 +33,7 @@
     By <cite title="Source Title">Saint Augustine</cite>
   </figcaption>
 </figure>
+    <h1>{{fetch}}</h1>
         <div class="mx-auto p-2" style="width: 75%;">
             <p>Travelling is an experience like no other. It allows you to step out of your comfort zone and explore new places, cultures, and people. Whether it's a short trip to a nearby city or a long journey to a far-off land, travel can enrich your life in countless ways.</p>
 
@@ -64,7 +65,7 @@
             <hr class="style1">
         </div>
         <div class="col bg-light text-right">
-            <button onclick="window.location.href='http://127.0.0.1:5000/jobs/{{i[0]}}';" type="button" class="btn btn-warning " style="text-align: center; ">Apply</button>
+            <button onclick="window.location.href='http://127.0.0.1:5000/jobs';" type="button" class="btn btn-warning " style="text-align: center; ">Apply</button>
 
         </div>
         {%endfor%}
