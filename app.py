@@ -14,7 +14,7 @@ app = Flask(__name__, template_folder='Template', static_folder="static")
 connection = mysql.connector.connect(host='aws.connect.psdb.cloud',\
                                          database='database_work',\
                                          user='dvt52fi4x22vvzuigz3v',\
-                                         password='pscale_pw_Rjk0JwWEW0qoEWn4S2zTUAHHsCvaAIldDCxiZkSI9f8')
+                                         password='')
 cursor = connection.cursor()
 cursor.execute("select * from database_work.travel_location;")
 # get all records
