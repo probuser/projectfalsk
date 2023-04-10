@@ -5,7 +5,7 @@ try:
     connection = mysql.connector.connect(host='aws.connect.psdb.cloud',
                                          database='database_work',
                                          user='dvt52fi4x22vvzuigz3v',
-                                         password='pscale_pw_Rjk0JwWEW0qoEWn4S2zTUAHHsCvaAIldDCxiZkSI9f8')
+                                         password='')
     if connection.is_connected():
         db_Info = connection.get_server_info()
         print("Connected to MySQL Server version ", db_Info)
